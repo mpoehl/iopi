@@ -11,7 +11,8 @@ wiringpi2.mcp23017Setup(pin_base,i2c_addr)
 wiringpi2.mcp23017Setup(pin_base+16,i2c_addr_2)
 
 # reset all pins as outputs and turn on
-for pin in range(65,96):
+# range means numbers from 65 to 97 exclude 97, 
+for pin in range(65,97):
 	wiringpi2.pinMode(pin,1)
 	wiringpi2.digitalWrite(pin,1)
 	
