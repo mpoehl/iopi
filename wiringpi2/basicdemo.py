@@ -14,7 +14,7 @@ wiringpi2.mcp23017Setup(pin_base+16,i2c_addr_2)
 
 #for pin in pins:
 while True:
-	for pin in range(65,96):
+	for pin in range(65,97): 	#65 to 97 excluding 97
 		wiringpi2.pinMode(pin,1)
 		wiringpi2.digitalWrite(pin,1)
 		wiringpi2.delay(100)
